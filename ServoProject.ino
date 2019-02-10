@@ -1,9 +1,8 @@
-/*Code written Exclusively by Josh Kaplan, with help from Ben and Sammy. 
+/*Code written by Josh Kaplan, with help from Ben and Sammy. 
  * All Rights Reserved @ Josh_Kaplan.
- * Some changes on this have not yet been commited to github. 
- */
+ * Some changes on this have not yet been commited to github. */
 
-#include <Servo.h> //includes the servo.h Library
+#include <Servo.h> //includes the servo.h library.
 
 int trigPin = 12; //declares what the trigpin is.
 int echoPin = 11; //decleares what the echopin is.
@@ -20,10 +19,13 @@ Servo myservo; //makes a servo called Myservo
 void setup() {
   // put your setup code here, to run once:
    pinMode(trigPin, OUTPUT); //declares this pin an output.
-   pinMode(echoPin, INPUT); //declares this pin an input455t00o
-   pinMode(but1, INPUT); //declares this pin an input
-   
+   pinMode(echoPin, INPUT); //declares this pin an input.
+   pinMode(but1, INPUT); //declares this pin an input.
+   pinMode(but2, INPUT); //declares this pin an input.
+  
+   pinMode(servo, INPUT); //declares this pin an input. 
    myservo.attach(servo); //attaches the servo on pin 9
+   
    Serial.begin(9600); //begins the serial monitor for debugging purposes
 }
 
