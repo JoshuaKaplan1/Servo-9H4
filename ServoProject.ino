@@ -1,7 +1,6 @@
 /*Code written by Josh Kaplan, with help from Ben and Sammy. 
  * All Rights Reserved @ Josh_Kaplan.
- * Some changes on this have not yet been commited to github. */
-
+ 
 #include <Servo.h> //includes the servo.h library.
 
 int trigPin = 12; //declares what the trigpin is.
